@@ -9,5 +9,5 @@ def test_status_code():
 
     # Проверка кода статуса
     assert response.status_code == 200, f'Unexpected status code for /trainers. Response: {response.text}'
-    # Проверка кода статуса
+    # Проверка имени
     assert response.json()['trainer_name'] == 'Котик', ''
